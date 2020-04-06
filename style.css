@@ -1,0 +1,159 @@
+body {
+  background-color: black;
+}
+
+.big-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 5.625em;
+}
+
+.big-container__background-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.questions-logo-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 73.125em;
+}
+
+.logo-part {
+  display: flex;
+  background-color: #5b0d0d;
+  justify-content: space-between;
+  opacity: 0.8;
+}
+
+.logo-part-img {
+  width: 17%;
+  background-color: #5b0d0d;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.logo-part-header {
+  margin: auto 0;
+  font-size: 1.56em;
+  color: wheat;
+}
+
+.logo-part-timer {
+  margin: auto 0;
+  font-size: 1.56em;
+  color: wheat;
+}
+
+.questions-part {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  opacity: 0.9;
+}
+
+.questions-part__left-side {
+  width: 67.67%;
+  height: 100%;
+}
+
+.questions-part__question-number {
+  font-size: 1.875em;
+  font-weight: bold;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.questions-part__question-and-choices {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.625em 0px 0.625em 0.625em;
+}
+
+.questions-part__answers {
+  margin-top: 1.25em;
+}
+
+.first-choice,
+.third-choice {
+  background-color: #f4f4f4;
+}
+
+.questions-part__btns {
+  display: flex;
+  justify-content: space-between;
+  /* color: #5b0d0d; */
+  font-size: 1.25em;
+  font-weight: bold;
+  background-color: #5b0d0d;
+}
+
+.questions-right-part {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  background-color: gainsboro;
+}
+
+.markedQ {
+  font-size: 1.56em;
+  padding: 10px 0 10px 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #800000;
+  color: wheat;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.questions-part__finish-btn {
+  position: absolute;
+  top: 550px;
+  left: 600px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 25% / 100%;
+  display: none;
+}
+/* Visibility of finish button */
+.visibility {
+  display: block;
+}
+
+.markedQ-visibility {
+  display: none;
+}
+
+.student-score {
+  font-size: 2em;
+  color: #383f48;
+  filter: brightness(1) saturate(50);
+  text-align: center;
+}
+
+@media (max-width: 73.125em) {
+  .questions-part__left-side {
+    width: 80%;
+    padding-left: 18.75em;
+  }
+  .questions-right-part {
+    width: 20%;
+  }
+  .big-container {
+    padding: 0;
+  }
+}

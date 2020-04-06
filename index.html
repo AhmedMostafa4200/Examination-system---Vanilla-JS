@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="big-container">
+      <img class="big-container__background-img" src="itiBuilding.jpg" alt="" />
+
+      <div class="questions-logo-container">
+        <div class="logo-part">
+          <!-- <div class="logo-part-img"></div> -->
+          <img class="logo-part-img" src="itiLogo.jpg" alt="" />
+          <h3 class="logo-part-header">IQ Exam</h3>
+          <div class="logo-part-timer"></div>
+        </div>
+
+        <div class="questions-part">
+          <div class="questions-part__left-side">
+            <div class="questions-part__question-number"></div>
+            <div class="questions-part__question-and-choices">
+              <div class="questions-part__question">what is your name</div>
+              <form class="questions-part__answers" action="">
+                <div class="first-choice">
+                  <input
+                    id="radio-firstChoice"
+                    class="questions-part__first-choice-radio radio"
+                    type="radio"
+                    name="choice"
+                    value=""
+                  />
+                  <label
+                    for="radio-firstChoice"
+                    class="questions-part__first-choice"
+                  >
+                  </label>
+                </div>
+                <div class="second-choice">
+                  <input
+                    id="radio-secondChoice"
+                    class="questions-part__second-choice-radio radio"
+                    type="radio"
+                    name="choice"
+                    value=""
+                  />
+                  <label
+                    for="radio-secondChoice"
+                    class="questions-part__second-choice"
+                  >
+                  </label>
+                </div>
+                <div class="third-choice">
+                  <input
+                    id="radio-thirdChoice"
+                    class="questions-part__third-choice-radio radio"
+                    type="radio"
+                    name="choice"
+                    value=""
+                  />
+                  <label
+                    for="radio-thirdChoice"
+                    class="questions-part__third-choice"
+                  >
+                  </label>
+                </div>
+                <div class="fourth-choice">
+                  <input
+                    id="radio-fourthChoice"
+                    class="questions-part__fourth-choice-radio radio"
+                    type="radio"
+                    name="choice"
+                    value=""
+                  />
+                  <label
+                    for="radio-fourthChoice"
+                    class="questions-part__fourth-choice"
+                  >
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="questions-part__btns">
+              <div class="questions-part__prev-btn btn">Previous</div>
+              <div class="questions-part__mark-btn btn">Mark</div>
+              <div class="questions-part__next-btn btn">Next</div>
+            </div>
+          </div>
+
+          <div class="questions-right-part"></div>
+        </div>
+      </div>
+
+      <div class="questions-part__finish-btn btn">Finish</div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
